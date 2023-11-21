@@ -15,7 +15,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'docker buildx build --build-context project=https://github.com/afsara-tasnim/sample_project .'
+        sh 'docker buildx build --build-context project=https://github.com/afsara-tasnim/sample_project . -t afsara813/website:latest'
       }
     }
 
