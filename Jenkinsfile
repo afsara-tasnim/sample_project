@@ -31,7 +31,7 @@ pipeline {
 
     stage('Push') {
       steps {
-        sh 'docker push docker.io/afsara813/website'
+        sh 'docker push afsara813/website:latest'
       }
     }
 
