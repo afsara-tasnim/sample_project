@@ -29,5 +29,11 @@ pipeline {
       }
     }
 
+    stage('Push') {
+      steps {
+        sh 'docker push afsara813/website:latest'
+      }
+    }
+
   }
 }
