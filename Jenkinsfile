@@ -22,7 +22,7 @@ pipeline {
     stage('Docker log In') {
       environment {
         Dockerhub = 'afsara813'
-        Dockerhub_pass = 'Lalaland#3'
+        Dockerhub_Pass = 'Lalaland#3'
       }
       steps {
         sh 'docker login -u $Dockerhub -p $Dockerhub_Pass'
